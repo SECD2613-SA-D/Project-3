@@ -8,6 +8,7 @@
 # AMIR HAMZAH BIN ABDUL HALIM      |      A23MJ8042
 #      MALIKA KASMALIEVA           |      A23MJ3016
 
+
 # Table Of Contents
 
 1.0 Overview of the Project
@@ -25,3 +26,32 @@
 
 
 # Topic: Online Restaurant Reservation System
+
+# 1.0 Overview of the Project
+
+    Formerly we talked about the Online reservation system which allows customers to make reservations online,
+    check table availability, and receive confirmation emails for a smooth dining experience.
+    We mainly focused on automated confirmation emails using user information from the website
+    and generating a display of available tables for designated time slots.
+    
+# 2.0 Problem Statement
+
+    Furthermore, the problem statement included a discussion about miscommunication, overbooking, and the struggles of canceling.
+    
+# 3.0 Proposed Solution
+    
+    As a solution, we mentioned creating a user interface that will include a list of restaurants, a reservation form, and a user account.
+    For easy cancellation, the button will be visibly present beside the reservations, and SMS/emails will be sent to confirm successful cancellation.
+    The information-gathering process to identify flaws comprises questionnaires and interviews.
+    
+# 4.0 Current Business Process/Workflow
+    
+    There were further discussions about the current business process and we portrayed 2 scenarios- online reservations and cancellations of reservations.
+    In addition to that functional requirements involve input, process, and output.
+    On the other hand, non-functional requirements included performance and control.
+    
+# 5.0 Logical DFD (AS-IS)
+    
+    For the Logical DFD AS-IS System, we created the context diagram, diagram 0, and child diagram(cancellation management).
+    Throughout this study, we aimed to understand the existing system's features and functionalities, its limitations, and possible improvements.
+    *CONSTRUCTED DIAGRAMS IN ANOTHER FILE*
