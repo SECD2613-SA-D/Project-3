@@ -55,3 +55,17 @@
     For the Logical DFD AS-IS System, we created the context diagram, diagram 0, and child diagram(cancellation management).
     Throughout this study, we aimed to understand the existing system's features and functionalities, its limitations, and possible improvements.
     *CONSTRUCTED DIAGRAMS IN ANOTHER FILE*
+
+# 6.0 System Analysis and Specification
+        6.1 Logical DFD TO-BE system (Context Diagram, Diagram 0, Child)
+        6.2 Process Specification (based on Logical DFD TO-BE)
+
+# 7.0 Physical System Design
+        7.1 Physical DFD TO-BE system (Diagram 0, Child, Partitioning, CRUD Matrix, Event Response Table, Structure Chart, System Architecture)
+
+# 8.0 System Wireframe (Input Design, Output Design)
+
+    Figma Project: https://www.figma.com/team_invite/redeem/HVf7W4Yj6qdeeQ3a2hMn6G
+
+# 9.0 Summary of the proposed system.
+
