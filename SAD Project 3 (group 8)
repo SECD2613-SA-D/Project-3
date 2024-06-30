@@ -29,31 +29,46 @@
 
 # 1.0 Overview of the Project
 
-    Formerly we talked about the Online reservation system which allows customers to make reservations online,
-    check table availability, and receive confirmation emails for a smooth dining experience.
-    We mainly focused on automated confirmation emails using user information from the website
-    and generating a display of available tables for designated time slots.
+      Formerly we talked about the Online reservation system which allows customers to make reservations online, check table availability,
+      and receive confirmation emails for a smooth dining experience. We mainly focused on automated confirmation emails using user 
+      information from the website and displaying available tables for designated time slots. Furthermore, we concentrated on 
+      the problem statements and solutions. The information-gathering process to identify flaws comprises questionnaires and interviews.
+      There were further discussions about the current business process. In addition to that functional requirements involve input, process,
+      and output. On the other hand, non-functional requirements included performance and control. We created a context diagram, diagram 0,
+      and a child diagram(cancellation management) for the Logical DFD AS-IS System. Throughout this study, we aimed to understand the existing 
+      system's features and functionalities, its limitations, and possible improvements.
+
     
 # 2.0 Problem Statement
+      Certain restaurants continue to use antiquated reservation techniques like walk-ins or phone calls, which can result in miscommunications,
+      duplicate bookings, and lengthy confirmation wait times. Canceling reservations is cumbersome as customers must contact the restaurant directly,
+      leading to mismanagement and missed rebooking opportunities. This ineffectiveness may reduce income. An online reservation system allows users to
+      easily check available tables, and make, alter, and cancel bookings using an interactive interface. Restaurants can improve communication by automating 
+      reservation reminders and confirmations. To raise output and satisfy clients, they can also gather data and insights.
 
-    Furthermore, the problem statement included a discussion about miscommunication, overbooking, and the struggles of canceling.
     
 # 3.0 Proposed Solution
-    
-    As a solution, we mentioned creating a user interface that will include a list of restaurants, a reservation form, and a user account.
-    For easy cancellation, the button will be visibly present beside the reservations, and SMS/emails will be sent to confirm successful cancellation.
-    The information-gathering process to identify flaws comprises questionnaires and interviews.
+      With a well-thought-out user interface, we hope to improve the eating experience for both customers and employees and maximize table management.
+      The system will contain a restaurant list with information such as location and hours, and a reservation form with date and time options. Customers
+      can create accounts to alter or cancel reservations, and the database will update the status to "Canceled" and free up the time slot. Secure authentication
+      and encryption will protect data privacy. SMS and email services will deliver booking confirmations, reminders, and cancellation notices. Reservation
+      management systems will allow staff to check upcoming reservations and contact customers as needed.
+
     
 # 4.0 Current Business Process/Workflow
     
-    There were further discussions about the current business process and we portrayed 2 scenarios- online reservations and cancellations of reservations.
-    In addition to that functional requirements involve input, process, and output.
-    On the other hand, non-functional requirements included performance and control.
+     In the current business process, we portrayed 2 scenarios- online reservations and cancellations of reservations.
+     In the first scenario, clients book online by providing their information on the restaurant's website. The system 
+     looks up table availability; if it is, it sends an email to confirm the reservation; if not, it provides alternate 
+     times or a waiting list. The host or hostess verifies reservations and seats guests using the system on the day of
+     the reservation. In the second scenario, guests alert the restaurant to a reservation cancellation. The customer 
+     receives a cancellation confirmation and the host releases the table by updating the system. 
+     In addition to that functional requirements involve input, process, and output. On the other hand, 
+     non-functional requirements included performance and control.
     
 # 5.0 Logical DFD (AS-IS)
     
     For the Logical DFD AS-IS System, we created the context diagram, diagram 0, and child diagram(cancellation management).
-    Throughout this study, we aimed to understand the existing system's features and functionalities, its limitations, and possible improvements.
     *CONSTRUCTED DIAGRAMS IN ANOTHER FILE*
 
 # 6.0 System Analysis and Specification
@@ -64,8 +79,18 @@
         7.1 Physical DFD TO-BE system (Diagram 0, Child, Partitioning, CRUD Matrix, Event Response Table, Structure Chart, System Architecture)
 
 # 8.0 System Wireframe (Input Design, Output Design)
-
     Figma Project: https://www.figma.com/team_invite/redeem/HVf7W4Yj6qdeeQ3a2hMn6G
 
 # 9.0 Summary of the proposed system.
+   In this investigation, we examined the capabilities, drawbacks, and possible enhancements of the current system. We mapped functional and non-functional
+   requirements, workflows, and other information using DFD diagrams to guide the design and implementation stages. This study offers a project scope to 
+   direct the creation of an effective and profitable online reservation system that satisfies needs and addresses identified problems.
+    
+
+
+
+
+
+
+
 
