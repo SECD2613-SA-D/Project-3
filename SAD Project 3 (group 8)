@@ -50,9 +50,9 @@
 # 3.0 Proposed Solution
       With a well-thought-out user interface, we hope to improve the eating experience for both customers and employees and maximize table management.
       The system will contain a restaurant list with information such as location and hours, and a reservation form with date and time options. Customers
-      can create accounts to alter or cancel reservations, and the database will update the status to "Canceled" and free up the time slot. Secure authentication
-      and encryption will protect data privacy. SMS and email services will deliver booking confirmations, reminders, and cancellation notices. Reservation
-      management systems will allow staff to check upcoming reservations and contact customers as needed.
+      can create accounts to alter or cancel reservations, and the database will update the status to "Canceled" and free up the time slot. SMS and email 
+      services will deliver booking confirmations, reminders, and cancellation notices. Reservation management systems will allow staff to check 
+      upcoming reservations and contact customers as needed.
 
     
 # 4.0 Current Business Process/Workflow
