@@ -78,6 +78,7 @@
 # 6.0 System Analysis and Specification
 
         6.1 Logical DFD TO-BE system (Context Diagram, Diagram 0, Child Diagram)
+
             *CONSTRUCTED DIAGRAMS IN "Logical DFD (TO-BE).pdf" FILE*
 
         6.2 Process Specification (based on Logical DFD TO-BE)
@@ -179,11 +180,14 @@
 
 
 # 7.0 Physical System Design
+
         7.1 Physical DFD TO-BE system (Diagram 0, Child, Partitioning, CRUD Matrix, Event Response Table, Structure Chart, System Architecture)
+
             *CONSTRUCTED DIAGRAMS IN "Physical DFD (TO-BE).pdf" FILE*
 
 
 # 8.0 System Wireframe (Input Design, Output Design)
+
       *CONSTRUCTED DIAGRAMS IN "Input&Output Design.pdf" FILE*
       Figma Project: https://www.figma.com/team_invite/redeem/HVf7W4Yj6qdeeQ3a2hMn6G
 
