@@ -40,6 +40,7 @@
 
     
 # 2.0 Problem Statement
+
       Certain restaurants continue to use antiquated reservation techniques like walk-ins or phone calls, which can result in miscommunications,
       duplicate bookings, and lengthy confirmation wait times. Canceling reservations is cumbersome as customers must contact the restaurant directly,
       leading to mismanagement and missed rebooking opportunities. This ineffectiveness may reduce income. An online reservation system allows users to
@@ -48,6 +49,7 @@
 
     
 # 3.0 Proposed Solution
+
       With a well-thought-out user interface, we hope to improve the eating experience for both customers and employees and maximize table management.
       The system will contain a restaurant list with information such as location and hours, and a reservation form with date and time options. Customers
       can create accounts to alter or cancel reservations, and the database will update the status to "Canceled" and free up the time slot. SMS and email 
@@ -65,23 +67,129 @@
      receives a cancellation confirmation and the host releases the table by updating the system. 
      In addition to that functional requirements involve input, process, and output. On the other hand, 
      non-functional requirements included performance and control.
-    
+
+
 # 5.0 Logical DFD (AS-IS)
     
     For the Logical DFD AS-IS System, we created the context diagram, diagram 0, and child diagram(cancellation management).
-    *CONSTRUCTED DIAGRAMS IN ANOTHER FILE*
+    *CONSTRUCTED DIAGRAMS IN "Logical DFD (AS-IS).pdf" FILE*
+
 
 # 6.0 System Analysis and Specification
-        6.1 Logical DFD TO-BE system (Context Diagram, Diagram 0, Child)
+
+        6.1 Logical DFD TO-BE system (Context Diagram, Diagram 0, Child Diagram)
+            *CONSTRUCTED DIAGRAMS IN "Logical DFD (TO-BE).pdf" FILE*
+
         6.2 Process Specification (based on Logical DFD TO-BE)
+
+            Process 1: Validate Personal Information
+                •	Process Number: 1
+                •	Process Name: Validate Personal Information
+                •	Description: This process validates the personal information provided by the customer to ensure it is complete and accurate.
+                •	Inputs:
+                    o	Personal Information (Customer)
+                •	Outputs:
+                    o	Validated Personal Information (to Personal Info Store)
+                •	Data Stores:
+                    o	Personal Info Store (for storing validated information)
+                •	Processing Logic:
+                    1.	Receive personal information from the customer.
+                    2.	Check for completeness (all required fields are filled).
+                    3.	Verify the accuracy of the information (e.g., valid email format, phone number).
+                    4.	If validation fails, return an error message to the customer.
+                    5.	If validation succeeds, store the validated information in the Personal Info Store.
+
+            Process 2: Process Reservation
+                •	Process Number: 2
+                •	Process Name: Process Reservation
+                •	Description: This process handles new reservation requests from customers, checks table availability, and updates the reservation status.
+                •	Inputs:
+                    o	Reservation Details (Customer)
+                    o	Available Tables (Table Store)
+                •	Outputs:
+                    o	Reservation Confirmation (to Customer)
+                    o	Updated Reservation Details (to Reservation Store)
+                •	Data Stores:
+                    o	Reservation Store (for storing reservation details)
+                    o	Table Store (for checking and updating table availability)
+                •	Processing Logic:
+                    1.	Receive reservation details from the customer.
+                    2.	Check table availability from the Table Store.
+                    3.	If no tables are available, add the customer to the waiting list and notify them.
+                    4.	If a table is available, confirm the reservation and update the Table Store.
+                    5.	Send a reservation confirmation to the customer.
+                    6.	Store the updated reservation details in the Reservation Store.
+
+            Process 3: Handle Cancellation
+                •	Process Number: 3
+                •	Process Name: Handle Cancellation
+                •	Description: This process handles reservation cancellation requests from customers and updates the relevant data stores.
+                •	Inputs:
+                    o	Cancellation Request (Customer)
+                    o	Reservation Details (Reservation Store)
+                •	Outputs:
+                    o	Cancellation Confirmation (to Customer)
+                    o	Updated Reservation Status (to Reservation Store)
+                    o	Updated Table Availability (to Table Store)
+                •	Data Stores:
+                    o	Reservation Store (for updating reservation status)
+                    o	Table Store (for updating table availability)
+                    o	Email Store (for storing cancellation confirmation emails)
+                •	Processing Logic:
+                    1.	Receive cancellation request from the customer.
+                    2.	Validate the cancellation request against the reservation details in the Reservation Store.
+                    3.	If the reservation exists and can be cancelled, update the reservation status to 'Cancelled' in the Reservation Store.
+                    4.	Update the table availability in the Table Store.
+                    5.	Send a cancellation confirmation to the customer.
+                    6.	Store the cancellation confirmation email in the Email Store.
+
+            Process 4: Manage Table Availability
+                •	Process Number: 4
+                •	Process Name: Manage Table Availability
+                •	Description: This process manages the availability of tables based on reservations and cancellations.
+                •	Inputs:
+                    o	Reservation Details (Reservation Store)
+                    o	Cancellation Details (Cancellation Process)
+                •	Outputs:
+                    o	Updated Table Availability (to Table Store)
+                •	Data Stores:
+                    o	Table Store (for storing table availability)
+                •	Processing Logic:
+                    1.	Receive updated reservation details from the Reservation Store.
+                    2.	Receive cancellation details from the Cancellation Process.
+                    3.	Update the table availability status in the Table Store based on reservations and cancellations.
+                    4.	Ensure real-time table availability data is accurate and up-to-date.
+
+            Process 5: Send Email Confirmations
+                •	Process Number: 5
+                •	Process Name: Send Email Confirmations
+                •	Description: This process sends email confirmations to customers for reservations and cancellations.
+                •	Inputs:
+                    o	Reservation Confirmation (Process Reservation)
+                    o	Cancellation Confirmation (Handle Cancellation)
+                •	Outputs:
+                    o	Email Confirmation (to Customer)
+                •	Data Stores:
+                    o	Email Store (for storing email confirmations)
+                •	Processing Logic:
+                    1.	Receive reservation confirmation details from the Process Reservation.
+                    2.	Receive cancellation confirmation details from the Handle Cancellation.
+                    3.	Generate and send an email confirmation to the customer for both reservation and cancellation.
+                    4.	Store the email confirmation in the Email Store for record-keeping.
+
 
 # 7.0 Physical System Design
         7.1 Physical DFD TO-BE system (Diagram 0, Child, Partitioning, CRUD Matrix, Event Response Table, Structure Chart, System Architecture)
+            *CONSTRUCTED DIAGRAMS IN "Physical DFD (TO-BE).pdf" FILE*
+
 
 # 8.0 System Wireframe (Input Design, Output Design)
-    Figma Project: https://www.figma.com/team_invite/redeem/HVf7W4Yj6qdeeQ3a2hMn6G
+      *CONSTRUCTED DIAGRAMS IN "Input&Output Design.pdf" FILE*
+      Figma Project: https://www.figma.com/team_invite/redeem/HVf7W4Yj6qdeeQ3a2hMn6G
+
 
 # 9.0 Summary of the proposed system.
+
    In this investigation, we examined the capabilities, drawbacks, and possible enhancements of the current system. We mapped functional and non-functional
    requirements, workflows, and other information using DFD diagrams to guide the design and implementation stages. This study offers a project scope to 
    direct the creation of an effective and profitable online reservation system that satisfies needs and addresses identified problems.
